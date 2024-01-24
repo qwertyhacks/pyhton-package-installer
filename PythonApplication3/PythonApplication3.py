@@ -16,7 +16,7 @@ def submit_feedback():
     send_feedback_to_discord(username, feedback_text)
 
 def send_feedback_to_discord(username, feedback_text):
-    webhook_url = 'YOUR_DISCORD_WEBHOOK_URL'
+    webhook_url = 'https://discord.com/api/webhooks/1199543798959710208/7W6rN6pbP3NTOoNTtlYX54XGRfl5Gpiexs1RwVX60hvXIhjMmCtyIPIswLsmvPzE7y3U'
     payload = {'content': f'New Feedback from {username}:\n{feedback_text}'}
     requests.post(webhook_url, json=payload)
 
